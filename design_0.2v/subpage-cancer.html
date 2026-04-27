@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>암보험 서브페이지 | 랜딩플랫폼 0.2</title>
+    <meta
+      name="description"
+      content="암보험 상품 상세 비교와 맞춤 상담 신청을 위한 글래스모피즘 서브페이지"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-orb orb-1" aria-hidden="true"></div>
+    <div class="bg-orb orb-2" aria-hidden="true"></div>
+    <div class="bg-noise" aria-hidden="true"></div>
+
+    <header class="site-header" id="top">
+      <div class="container nav-shell glass">
+        <a href="index.html" class="brand" aria-label="랜딩플랫폼 홈">
+          <span class="brand-dot">LP</span>
+          <span class="brand-text">랜딩플랫폼</span>
+        </a>
+
+        <nav class="main-nav" aria-label="주요 메뉴">
+          <a href="#need">왜 필요한가</a>
+          <a href="#compare">비교 예시</a>
+          <a href="#persona">추천 대상</a>
+          <a href="#faq">FAQ</a>
+        </nav>
+
+        <a class="btn btn-primary" href="#leadFormSubTop">상담 신청</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="section sub-hero">
+        <div class="container">
+          <p class="crumbs">
+            <a href="index.html">홈</a>
+            <span>/</span>
+            <span>암보험</span>
+          </p>
+          <div class="hero-grid">
+            <article class="hero-copy glass lift">
+              <p class="eyebrow">Cancer Insurance</p>
+              <h1>또 걸려도 또 받는 암보험,<br />가족의 생활비를 지키는 구조.</h1>
+              <p class="hero-desc">
+                진단금, 수술비, 입원비를 목적별로 분리해 비교하고 현재 연령/가족력/예산에 맞는
+                보장 조합을 제안합니다.
+              </p>
+              <div class="cta-row">
+                <a class="btn btn-primary" href="#leadFormSubTop">무료 상담 시작</a>
+                <a class="btn btn-ghost" href="#compare">비교 카드 보기</a>
+              </div>
+            </article>
+
+            <aside class="lead-card glass lift" id="leadFormSubTop">
+              <header class="lead-head">
+                <p class="chip">상품 전용 상담</p>
+                <h2>암보험 빠른 상담</h2>
+              </header>
+              <form class="lead-form js-lead-form">
+                <label>
+                  성함
+                  <input type="text" name="name" placeholder="홍길동" minlength="2" required />
+                </label>
+                <label>
+                  연락처
+                  <input type="tel" name="phone" inputmode="numeric" placeholder="010-0000-0000" required />
+                </label>
+                <label>
+                  생년월일
+                  <input type="date" name="birth" required />
+                </label>
+                <label>
+                  상담 희망 시간
+                  <select name="time" required>
+                    <option value="">선택해 주세요</option>
+                    <option>오전</option>
+                    <option>오후</option>
+                    <option>상관없음</option>
+                  </select>
+                </label>
+                <label class="check-row">
+                  <input type="checkbox" name="privacy" required />
+                  <span>(필수) 개인정보 수집·이용 동의</span>
+                </label>
+                <label class="check-row">
+                  <input type="checkbox" name="thirdParty" required />
+                  <span>(필수) 제3자 제공 동의</span>
+                </label>
+                <button class="btn btn-primary btn-block" type="submit">맞춤 설계 요청</button>
+              </form>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="need">
+        <div class="container">
+          <header class="section-head">
+            <p class="eyebrow">Why It Matters</p>
+            <h2>왜 지금 암보험을 점검해야 할까요?</h2>
+          </header>
+          <div class="need-grid">
+            <article class="glass need-card lift">
+              <p class="metric-label">평균 치료 비용</p>
+              <p class="metric-value mono">₩14.5M</p>
+              <p class="metric-note">진단 이후 초기 1년 평균 지출 추정치</p>
+            </article>
+            <article class="glass need-card lift">
+              <p class="metric-label">소득 공백 기간</p>
+              <p class="metric-value mono">6 - 18M</p>
+              <p class="metric-note">회복 단계에 따른 소득 감소 구간</p>
+            </article>
+            <article class="glass need-card lift">
+              <p class="metric-label">보장 우선순위</p>
+              <ul class="bullet-list">
+                <li>진단금 충분성</li>
+                <li>재진단/전이 보장 조건</li>
+                <li>치료 단계별 특약 여부</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="compare">
+        <div class="container">
+          <header class="section-head">
+            <p class="eyebrow">Comparison</p>
+            <h2>보험사별 비교 예시</h2>
+          </header>
+          <div class="compare-grid">
+            <article class="glass compare-card lift">
+              <h3>A 보험사</h3>
+              <p>일반암 진단금: 5,000만원</p>
+              <p>유사암 진단금: 1,000만원</p>
+              <p class="masked-price">월 보험료: ***,***원</p>
+            </article>
+            <article class="glass compare-card lift">
+              <h3>B 보험사</h3>
+              <p>일반암 진단금: 4,000만원</p>
+              <p>재진단 특약: 포함</p>
+              <p class="masked-price">월 보험료: ***,***원</p>
+            </article>
+            <article class="glass compare-card lift">
+              <h3>C 보험사</h3>
+              <p>표적항암 치료 특약: 포함</p>
+              <p>납입면제 조건: 우수</p>
+              <p class="masked-price">월 보험료: ***,***원</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="persona">
+        <div class="container">
+          <header class="section-head">
+            <p class="eyebrow">Recommended For</p>
+            <h2>이런 분께 추천합니다</h2>
+          </header>
+          <div class="persona-grid">
+            <article class="glass persona-card lift">
+              <h3>40-50대 가장</h3>
+              <p>가족 생활비 공백을 줄이는 진단금 중심 설계가 필요한 경우</p>
+            </article>
+            <article class="glass persona-card lift">
+              <h3>가족력 보유</h3>
+              <p>재진단/전이까지 고려한 확장 보장을 준비하려는 경우</p>
+            </article>
+            <article class="glass persona-card lift">
+              <h3>기존 보험 보유자</h3>
+              <p>중복 보장과 공백 보장을 함께 리모델링하려는 경우</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="faq">
+        <div class="container">
+          <header class="section-head">
+            <p class="eyebrow">FAQ</p>
+            <h2>암보험 상품 FAQ</h2>
+          </header>
+          <div class="faq-list">
+            <details class="glass faq-item" open>
+              <summary>기존 암보험이 있어도 추가 가입이 필요할까요?</summary>
+              <p>보장 범위와 진단금 수준에 따라 다르며, 중복과 공백을 함께 점검하는 것이 좋습니다.</p>
+            </details>
+            <details class="glass faq-item">
+              <summary>진단금은 어느 정도가 적정한가요?</summary>
+              <p>현재 소득, 고정지출, 치료 기간 가정에 따라 목표 금액을 설정합니다.</p>
+            </details>
+            <details class="glass faq-item">
+              <summary>온라인 상담만으로도 설계가 가능한가요?</summary>
+              <p>네. 1차 상담 후 상품 비교표를 전달하고 필요 시 전화 상담으로 마무리합니다.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section class="section sub-cta">
+        <div class="container">
+          <div class="sub-cta-shell glass">
+            <div>
+              <p class="eyebrow">Final CTA</p>
+              <h2>내 상황에 맞는 암보험, 지금 점검하세요.</h2>
+              <p class="hero-desc">간단한 정보 입력 후 맞춤 보장 비교안을 받아보실 수 있습니다.</p>
+            </div>
+            <form class="lead-form js-lead-form sub-cta-form">
+              <label>
+                성함
+                <input type="text" name="name" placeholder="홍길동" minlength="2" required />
+              </label>
+              <label>
+                연락처
+                <input type="tel" name="phone" inputmode="numeric" placeholder="010-0000-0000" required />
+              </label>
+              <label class="check-row">
+                <input type="checkbox" name="privacy" required />
+                <span>(필수) 개인정보 수집·이용 동의</span>
+              </label>
+              <label class="check-row">
+                <input type="checkbox" name="thirdParty" required />
+                <span>(필수) 제3자 제공 동의</span>
+              </label>
+              <button class="btn btn-primary btn-block" type="submit">비교안 받기</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-shell glass">
+        <div class="footer-links">
+          <a href="#">이용약관</a>
+          <a href="#">개인정보처리방침</a>
+          <a href="#">마케팅 수신 동의</a>
+        </div>
+        <p>
+          (주)엠플래닛 | 대표: 홍길동 | 사업자등록번호: 000-00-00000 | 통신판매업신고: 제2026-서울강남-0000호
+        </p>
+        <p>
+          보험대리점 등록번호: 0000000000 | 주소: 서울특별시 강남구 테헤란로 00 | 대표번호: 02-000-0000 | email: contact@example.com
+        </p>
+        <p class="compliance">
+          본 사이트는 보험 상담 연결을 위한 정보 제공 서비스입니다. 실제 계약 체결은 보험사 및 담당 설계사를 통해 이루어집니다.
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

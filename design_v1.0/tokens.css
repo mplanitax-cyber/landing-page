@@ -1,0 +1,145 @@
+/* ============================================================
+   Design System v1.0 | Tokens
+   엠플랜잇 GA 랜딩 플랫폼 — CSS 변수 기반 토큰화
+   ============================================================ */
+
+:root {
+  /* ==== Neutral Color Scale (0~900) ==== */
+  --color-neutral-0:   #FFFFFF;
+  --color-neutral-50:  #F7F8FA;
+  --color-neutral-100: #EFF1F5;
+  --color-neutral-200: #D9DDE5;
+  --color-neutral-300: #B5BAC4;
+  --color-neutral-400: #8A909B;
+  --color-neutral-500: #5B6170;
+  --color-neutral-600: #3D4351;
+  --color-neutral-700: #272B35;
+  --color-neutral-800: #181B22;
+  --color-neutral-900: #0E1015;
+
+  /* ==== Semantic Colors ==== */
+  --color-success:      #12B76A;
+  --color-success-soft: #D1FADF;
+  --color-warning:      #F79009;
+  --color-warning-soft: #FEF0C7;
+  --color-danger:       #D92D20;
+  --color-danger-soft:  #FEE4E2;
+  --color-info:         #0BA5EC;
+  --color-info-soft:    #CFF0FF;
+
+  /* ==== Brand Palette (엠플랜잇 기본) ==== */
+  --brand-primary:        #1A3A6B; /* Deep Navy */
+  --brand-primary-strong: #102B52;
+  --brand-primary-soft:   #E8EEF7;
+  --brand-primary-ink:    #FFFFFF;
+
+  --brand-secondary:        #D4A24C; /* Gold Accent */
+  --brand-secondary-strong: #B8862E;
+  --brand-secondary-soft:   #FDF5E3;
+
+  --brand-accent:         #0BA5EC; /* Data Blue */
+  --brand-accent-soft:    #CFF0FF;
+
+  /* ==== Surface / Background ==== */
+  --bg-page:         var(--color-neutral-0);
+  --bg-section:      var(--color-neutral-50);
+  --bg-section-alt:  var(--color-neutral-100);
+  --bg-inverse:      var(--color-neutral-800);
+  --bg-inverse-ink:  var(--color-neutral-0);
+
+  /* ==== Text Colors ==== */
+  --text-primary:    var(--color-neutral-900);
+  --text-secondary:  var(--color-neutral-600);
+  --text-tertiary:   var(--color-neutral-400);
+  --text-inverse:    var(--color-neutral-0);
+  --text-brand:      var(--brand-primary);
+  --text-link:       var(--brand-accent);
+
+  /* ==== Border / Divider ==== */
+  --border-subtle:  var(--color-neutral-200);
+  --border-default: var(--color-neutral-300);
+  --border-strong:  var(--color-neutral-500);
+  --border-brand:   var(--brand-primary);
+
+  /* ==== Typography ==== */
+  --font-sans: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo',
+               'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, 'Noto Sans KR', sans-serif;
+  --font-display: 'Pretendard', system-ui, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+
+  --text-xs:   12px;
+  --text-sm:   14px;
+  --text-base: 16px;
+  --text-lg:   18px;
+  --text-xl:   20px;
+  --text-2xl:  24px;
+  --text-3xl:  30px;
+  --text-4xl:  36px;
+  --text-5xl:  48px;
+  --text-6xl:  60px;
+
+  --fw-regular:  400;
+  --fw-medium:   500;
+  --fw-semibold: 600;
+  --fw-bold:     700;
+  --fw-black:    800;
+
+  /* ==== Spacing Scale (4px base) ==== */
+  --space-0:   0;
+  --space-1:   4px;
+  --space-2:   8px;
+  --space-3:   12px;
+  --space-4:   16px;
+  --space-5:   20px;
+  --space-6:   24px;
+  --space-8:   32px;
+  --space-10:  40px;
+  --space-12:  48px;
+  --space-16:  64px;
+  --space-20:  80px;
+  --space-24:  96px;
+  --space-32:  128px;
+
+  /* ==== Container & Gutter ==== */
+  --container-sm:      640px;
+  --container-md:      768px;
+  --container-lg:      1024px;
+  --container-xl:      1200px;
+  --container-2xl:     1280px;
+  --gutter-desktop:    32px;
+  --gutter-tablet:     24px;
+  --gutter-mobile:     20px;
+
+  /* ==== Radius ==== */
+  --radius-none:  0;
+  --radius-sm:    4px;
+  --radius-md:    8px;
+  --radius-lg:    12px;
+  --radius-xl:    16px;
+  --radius-2xl:   24px;
+  --radius-full:  9999px;
+
+  /* ==== Shadow ==== */
+  --shadow-xs:  0 1px 2px rgba(16, 24, 40, 0.05);
+  --shadow-sm:  0 1px 3px rgba(16, 24, 40, 0.1), 0 1px 2px rgba(16, 24, 40, 0.06);
+  --shadow-md:  0 4px 8px -2px rgba(16, 24, 40, 0.1), 0 2px 4px -2px rgba(16, 24, 40, 0.06);
+  --shadow-lg:  0 12px 16px -4px rgba(16, 24, 40, 0.08), 0 4px 6px -2px rgba(16, 24, 40, 0.03);
+  --shadow-xl:  0 20px 24px -4px rgba(16, 24, 40, 0.08), 0 8px 8px -4px rgba(16, 24, 40, 0.03);
+  --shadow-brand: 0 8px 24px rgba(26, 58, 107, 0.2);
+
+  /* ==== Z-Index ==== */
+  --z-base:       0;
+  --z-dropdown:   100;
+  --z-sticky:     200;
+  --z-drawer:     300;
+  --z-modal:      400;
+  --z-toast:      500;
+  --z-tooltip:    600;
+
+  /* ==== Motion / Transition ==== */
+  --ease-out:      cubic-bezier(0.2, 0.6, 0.2, 1);
+  --ease-in-out:   cubic-bezier(0.4, 0, 0.2, 1);
+  --duration-fast: 150ms;
+  --duration-base: 250ms;
+  --duration-slow: 400ms;
+}

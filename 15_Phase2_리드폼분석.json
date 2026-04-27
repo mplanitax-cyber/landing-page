@@ -1,0 +1,16 @@
+{
+  "24:2972": {
+    "label": "보맵",
+    "position": "unclassified (x=631, y=100, w=548)",
+    "fields": 2,
+    "field_names": [
+      "이름",
+      "이메일",
+      "주소"
+    ],
+    "cta_labels": [],
+    "frame_coords": "631,100 → 548×263",
+    "frame_id": "24:3056",
+    "consent_markers": 5
+  }
+}

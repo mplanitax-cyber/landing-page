@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="엠플랜잇 운전자보험 상담 | 교통사고 법률비용·벌금 보장. 24시간 사고 지원 서비스." />
+  <meta property="og:title" content="운전자보험 | 엠플랜잇" />
+  <meta property="og:description" content="운전 중 불시의 사고, 법률·벌금까지 한 번에 대비" />
+  <meta property="og:type" content="website" />
+
+  <title>운전자보험 | 엠플랜잇</title>
+
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <a href="#main" class="skip-link">본문 바로가기</a>
+
+  <!-- ========== Header / Navigation ========== -->
+  <header class="site-header">
+    <div class="nav-wrap container">
+      <a href="./index.html" class="brand">엠플랜잇</a>
+      <nav class="main-nav" aria-label="주요 메뉴">
+        <a href="./index.html#products">상품</a>
+        <a href="./index.html#about">회사소개</a>
+        <a href="./index.html#faq">고객센터</a>
+      </nav>
+      <button class="hamburger-btn" aria-label="메뉴 열기" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <a href="#leadForm" class="btn btn-primary">무료 상담</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ========== Hero + Lead Form ========== -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <article class="hero-copy">
+          <p class="eyebrow">운전자보험</p>
+          <h1>운전 중 불시의 사고<br />법률·벌금까지 한 번에</h1>
+          <p>교통사고 발생 시 의료비는 물론 법률비용과 벌금까지 보장받습니다. 24시간 사고 지원 서비스로 즉각 대응합니다.</p>
+          <div style="margin-top: var(--space-8);">
+            <a href="#leadForm" class="btn btn-primary">상담 신청</a>
+          </div>
+        </article>
+
+        <aside class="lead-card" id="leadForm">
+          <h2 style="margin-bottom: var(--space-2);">운전자보험 상담</h2>
+          <p class="lead-note">당신의 운전 패턴에 맞는 맞춤형 상품을 제안합니다.</p>
+          <form class="lead-form" method="POST" action="https://formspree.io/f/YOUR_ID">
+            <div class="form-group">
+              <label for="name">성함</label>
+              <input id="name" type="text" name="name" minlength="2" placeholder="홍길동" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">연락처</label>
+              <input id="phone" type="tel" name="phone" inputmode="numeric" placeholder="010-0000-0000" required />
+            </div>
+            <div class="form-group">
+              <label for="product">상품</label>
+              <select id="product" name="product" required>
+                <option value="">선택해 주세요</option>
+                <option>암보험</option>
+                <option>실손의료비</option>
+                <option selected>운전자보험</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="time">상담희망시간</label>
+              <select id="time" name="time">
+                <option value="">지정 없음</option>
+                <option>09:00 ~ 12:00</option>
+                <option>12:00 ~ 15:00</option>
+                <option>15:00 ~ 18:00</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="inquiry">기타 문의</label>
+              <textarea id="inquiry" name="inquiry" placeholder="궁금한 점을 입력해 주세요."></textarea>
+            </div>
+
+            <div class="check-group">
+              <div class="check-item">
+                <input id="privacy" type="checkbox" name="privacy" required />
+                <label for="privacy">(필수) 개인정보 수집·이용 동의</label>
+              </div>
+              <div class="check-item">
+                <input id="thirdParty" type="checkbox" name="thirdParty" required />
+                <label for="thirdParty">(필수) 제3자 정보 제공 동의</label>
+              </div>
+              <div class="check-item">
+                <input id="marketing" type="checkbox" name="marketing" />
+                <label for="marketing">(선택) 마케팅 수신 동의</label>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block" style="margin-top: var(--space-6); height: 60px; font-size: var(--text-lg);">
+              무료 상담 신청
+            </button>
+          </form>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ========== Coverage ========== -->
+    <section class="section section-light">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">보장 범위</p>
+          <h2>운전자보험이 보장하는 항목</h2>
+        </div>
+
+        <div style="max-width: 800px; margin: 0 auto; overflow-x: auto;">
+          <table style="width: 100%; border-collapse: collapse; font-size: var(--text-sm);">
+            <thead>
+              <tr style="background: var(--bg-section); border-bottom: 2px solid var(--border-default);">
+                <th style="padding: var(--space-4); text-align: left; font-weight: var(--fw-bold);">보장 항목</th>
+                <th style="padding: var(--space-4); text-align: left; font-weight: var(--fw-bold);">설명</th>
+                <th style="padding: var(--space-4); text-align: center; font-weight: var(--fw-bold);">보장</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="border-bottom: 1px solid var(--border-subtle);">
+                <td style="padding: var(--space-4);">교통사고처리지원금</td>
+                <td style="padding: var(--space-4);">상대방 피해에 대한 합의금·치료비 지원</td>
+                <td style="padding: var(--space-4); text-align: center;">✓</td>
+              </tr>
+              <tr style="border-bottom: 1px solid var(--border-subtle);">
+                <td style="padding: var(--space-4);">변호사선임비</td>
+                <td style="padding: var(--space-4);">교통사고 처리 시 법률 상담 및 소송비용</td>
+                <td style="padding: var(--space-4); text-align: center;">✓</td>
+              </tr>
+              <tr style="border-bottom: 1px solid var(--border-subtle);">
+                <td style="padding: var(--space-4);">벌금</td>
+                <td style="padding: var(--space-4);">교통위반으로 인한 벌금 및 면허정지비용</td>
+                <td style="padding: var(--space-4); text-align: center;">✓</td>
+              </tr>
+              <tr style="border-bottom: 1px solid var(--border-subtle);">
+                <td style="padding: var(--space-4);">면책</td>
+                <td style="padding: var(--space-4);">음주운전, 뺑소니 등 면책사유 검토</td>
+                <td style="padding: var(--space-4); text-align: center;">제한</td>
+              </tr>
+              <tr style="border-bottom: 1px solid var(--border-subtle);">
+                <td style="padding: var(--space-4);">의료비</td>
+                <td style="padding: var(--space-4);">교통사고로 인한 치료비 보장</td>
+                <td style="padding: var(--space-4); text-align: center;">별도</td>
+              </tr>
+              <tr>
+                <td style="padding: var(--space-4);">차량 손해</td>
+                <td style="padding: var(--space-4);">자동차 손해보험에 별도 가입 필요</td>
+                <td style="padding: var(--space-4); text-align: center;">별도</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== Partner Comparison ========== -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">보험사 비교</p>
+          <h2>협력사의 운전자보험 상품 비교</h2>
+        </div>
+
+        <div class="product-grid">
+          <article class="product-card">
+            <h3>D손해보험 드라이버</h3>
+            <p>DB손해보험의 종합 운전자보험. 교통사고처리지원금 1억원, 변호사 선임비 5천만원 등 충실한 보장을 제공합니다.</p>
+            <p style="color: var(--text-secondary); font-weight: var(--fw-semibold); margin-top: var(--space-4);">월 보험료: 상담시 안내</p>
+            <a href="#leadForm" style="margin-top: var(--space-4); display: inline-block;">상담 신청 →</a>
+          </article>
+
+          <article class="product-card">
+            <h3>K손해보험 안전운전</h3>
+            <p>KB손해보험의 경제형 운전자보험. 저렴한 보험료로 기본 보장을 갖추고 싶은 분들께 적합합니다.</p>
+            <p style="color: var(--text-secondary); font-weight: var(--fw-semibold); margin-top: var(--space-4);">월 보험료: 상담시 안내</p>
+            <a href="#leadForm" style="margin-top: var(--space-4); display: inline-block;">상담 신청 →</a>
+          </article>
+
+          <article class="product-card">
+            <h3>H해상 운전자케어</h3>
+            <p>현대해상의 프리미엄 운전자보험. 24시간 사고 지원 서비스와 함께 고액 보장 한도로 완벽한 대비가 가능합니다.</p>
+            <p style="color: var(--text-secondary); font-weight: var(--fw-semibold); margin-top: var(--space-4);">월 보험료: 상담시 안내</p>
+            <a href="#leadForm" style="margin-top: var(--space-4); display: inline-block;">상담 신청 →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== Recommended For ========== -->
+    <section class="section section-light">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">추천 대상</p>
+          <h2>운전자보험이 필요한 사람들</h2>
+        </div>
+
+        <div class="product-grid">
+          <article class="product-card">
+            <h3>출퇴근 운전자</h3>
+            <p>매일 운전하는 분들은 사고 위험이 높습니다. 법률 및 벌금 위험에 대비하세요.</p>
+          </article>
+          <article class="product-card">
+            <h3>운송업 종사자</h3>
+            <p>장거리 운전이 많은 택시, 버스 운전자나 배달 운전자는 필수입니다.</p>
+          </article>
+          <article class="product-card">
+            <h3>신규 운전자</h3>
+            <p>경험 부족으로 사고 위험이 높은 신규 운전자에게 특히 중요합니다.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== Product FAQ ========== -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">자주 묻는 질문</p>
+          <h2>운전자보험 관련 Q&A</h2>
+        </div>
+
+        <div style="max-width: 700px; margin: 0 auto;">
+          <div class="faq-list">
+            <details class="faq-item" open>
+              <summary>음주운전이나 뺑소니는 보험이 안 되나요?</summary>
+              <p>네, 음주운전, 뺑소니, 무면허 운전 등의 사유로는 보험금을 받을 수 없습니다. 이는 보험사마다 정하는 면책사유이므로 가입 전 약관을 반드시 확인하세요.</p>
+            </details>
+
+            <details class="faq-item">
+              <summary>교통사고처리지원금은 얼마까지 받나요?</summary>
+              <p>보험사와 상품에 따라 다르지만 일반적으로 5,000만원에서 1억원 사이의 한도가 설정됩니다. 상담 시 자세한 내용을 안내받으실 수 있습니다.</p>
+            </details>
+
+            <details class="faq-item">
+              <summary>운전자보험과 자동차보험은 다른가요?</summary>
+              <p>네, 다릅니다. 자동차보험은 차량 손해를 보장하고, 운전자보험은 운전자가 입는 개인적 법적·금전적 손해를 보장합니다. 둘 다 가입하는 것이 좋습니다.</p>
+            </details>
+
+            <details class="faq-item">
+              <summary>운전면허 정지 시에도 보장받나요?</summary>
+              <p>운전면허 정지로 인한 손실은 보장되지 않습니다. 교통위반으로 인한 벌금은 보장되지만, 면허정지로 인한 소득 손실은 별도 특약이 필요할 수 있습니다.</p>
+            </details>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== Related Products ========== -->
+    <section class="section section-light">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">추가 보장</p>
+          <h2>운전자보험과 함께하면 좋은 상품</h2>
+        </div>
+
+        <div class="product-grid">
+          <article class="product-card">
+            <h3>자동차보험</h3>
+            <p>차량 손해에 대비하기 위해 필수입니다. 운전자보험과 함께 가입해 완벽한 보장을 받으세요.</p>
+            <a href="#">자세히 보기 →</a>
+          </article>
+          <article class="product-card">
+            <h3>실손의료비</h3>
+            <p>교통사고로 인한 의료비를 보장받습니다. 운전자보험과 함께 가입하면 의료비 걱정 없이 치료받을 수 있습니다.</p>
+            <a href="./subpage-medical.html">자세히 보기 →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== Lead Form 2 ========== -->
+    <section class="section section-dark">
+      <div class="container">
+        <div style="max-width: 600px; margin: 0 auto;">
+          <h2 style="text-align: center; margin-bottom: var(--space-8);">안전한 운전, 보험으로 준비</h2>
+          <p style="text-align: center; color: rgba(255,255,255,0.8); margin-bottom: var(--space-8);">
+            당신의 운전 습관에 맞는 맞춤 상품을 찾아보세요.
+          </p>
+
+          <form class="lead-form" method="POST" action="https://formspree.io/f/YOUR_ID">
+            <div class="form-group">
+              <label for="name2">성함</label>
+              <input id="name2" type="text" name="name" minlength="2" placeholder="홍길동" required />
+            </div>
+            <div class="form-group">
+              <label for="phone2">연락처</label>
+              <input id="phone2" type="tel" name="phone" inputmode="numeric" placeholder="010-0000-0000" required />
+            </div>
+            <div class="form-group">
+              <label for="product2">상품</label>
+              <select id="product2" name="product" required>
+                <option value="">선택해 주세요</option>
+                <option>암보험</option>
+                <option>실손의료비</option>
+                <option selected>운전자보험</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="time2">상담희망시간</label>
+              <select id="time2" name="time">
+                <option value="">지정 없음</option>
+                <option>09:00 ~ 12:00</option>
+                <option>12:00 ~ 15:00</option>
+                <option>15:00 ~ 18:00</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="inquiry2">기타 문의</label>
+              <textarea id="inquiry2" name="inquiry" placeholder="궁금한 점을 입력해 주세요."></textarea>
+            </div>
+
+            <div class="check-group">
+              <div class="check-item">
+                <input id="privacy2" type="checkbox" name="privacy" required />
+                <label for="privacy2">(필수) 개인정보 수집·이용 동의</label>
+              </div>
+              <div class="check-item">
+                <input id="thirdParty2" type="checkbox" name="thirdParty" required />
+                <label for="thirdParty2">(필수) 제3자 정보 제공 동의</label>
+              </div>
+              <div class="check-item">
+                <input id="marketing2" type="checkbox" name="marketing" />
+                <label for="marketing2">(선택) 마케팅 수신 동의</label>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block" style="margin-top: var(--space-6); height: 60px; font-size: var(--text-lg);">
+              상담 신청
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========== Footer ========== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-links">
+        <a href="#">이용약관</a>
+        <a href="#">개인정보처리방침</a>
+        <a href="#">마케팅 수신 동의</a>
+      </div>
+      <p>(주)엠플랜잇 | 사업자등록번호: 000-00-00000</p>
+      <p>주소: 서울특별시 강남구 테헤란로 000 | 대표번호: 02-000-0000</p>
+      <div class="footer-legal">
+        <strong>법적 고지:</strong> 본 사이트는 보험 상담 연결을 위한 정보 제공 서비스로, 보험 계약의 체결을 중개·대리하지 않습니다. 실제 가입은 보험사 및 담당 설계사를 통해 이루어지며, 보험 상품의 상세 내용은 각 보험사의 약관을 따릅니다.
+      </div>
+      <p style="margin-top: var(--space-6); font-size: var(--text-xs); color: rgba(255,255,255,0.4);">
+        &copy; 2026 엠플랜잇. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Mobile Sticky CTA -->
+  <div class="mobile-cta">
+    <a href="#leadForm">무료 상담 신청</a>
+  </div>
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- Main Scripts -->
+  <script src="./script.js"></script>
+</body>
+</html>
